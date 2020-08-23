@@ -1,92 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="app.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
-    rel="stylesheet"
-  />
-  <title>Document</title>
-</head>
-<body>
-  <header id="header">
-    <div class="container">
-      <h1>Kathleen Bongco:Software Engineer</h1>
-      <nav id="nav">
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Projects</a>
-          </li>
-          <li>
-            <a href="#">Contact me</a>
-          </li>
-          <li>
-            <a href="#">Resume</a>
-          </li>
-        </ul>
-      </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <h1>Kathleen Bongco:Software Engineer</h1>
+        <nav id="nav">
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+            <li>
+              <a href="#">Contact me</a>
+            </li>
+            <li>
+              <a href="#">Resume</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="about">
+      <h1>Who am I?</h1>
+      <p id="me">
+        My name is Kathleen and I am a Software Engineer. I have a background
+        working in the food industry as a food scientist/laboratory technician
+        in some of the major food companies in the area. Outside of coding I am
+        very active in the anime community as a panelist and a
+        volunteer/staffer, love video games, and enjoy working out and training
+        as a newbie powerlifter in the USAPL. I really enjoy programming because
+        it lets you express yourself in a weird way, even when you're not very
+        creative, and to me its kind of like a puzzle and you get to think
+        outside of the box when creating something new. I love expressing myself
+        through all my coding projects, so take a look around! :)
+      </p>
+      <a href='https://www.linkedin.com/in/kathleen-bongco-11843197/'><img class='social-icon' src='assets/linkedin.png'></a>
+      <a href='http://github.com/kbongco'><img class='social-icon' src='assets/github.png'></a>
     </div>
-  </header>
-  <div class="about">
-    <h1>Who am I?</h1>
-    <p id="me">
-      My name is Kathleen and I am a Software Engineer. I have a background
-      working in the food industry as a food scientist/laboratory technician in 
-      some of the major food companies in the area. Outside of coding I am very
-      active in the anime community as a panelist and a volunteer/staffer, love video games, 
-      and enjoy working out and training as a newbie powerlifter in the USAPL. 
-
-      I really enjoy programming because it lets you express yourself in a weird way, 
-      even when you're not very creative, and to me its kind of like a puzzle and you
-      get to think outside of the box when creating something new. I love expressing
-      myself through all my coding projects, so take a look around! :) 
-    </p>
-  </div>
-  <div class="skills">
-    <h1>What technologies & tools do I know?</h1>
-    <div class='imgcontainer'>
-      <img class='icons' src='assets/html5.png' alt='html'>
-      <img class='icons' src='assets/css3.png' alt='css3'>
-      <img class='icons' src='assets/javascript.jpeg'alt='javascript'>
-      <img class='icons' src='assets/react.png' alt='react'>
-      <img class='icons' src='assets/mongodb.jpeg' alt='mongo'>
-      <img class='icons' src='assets/mongoose.jpg' alt='mongoose'>
-      <img class='icons' src='assets/expressjs.png' alt='express'>
-      <img class='icons' src='assets/python.png'alt='python'>
-      <img class='icons' src='assets/psql.png' alt='psql'>
-      <img class='icons' src='assets/flask.jpg' alt='flask'>
-      <img class='icons' src='assets/heroku.png' alt='heroku'>
-      <img class='icons' src='assets/jupyter.png' alt='jupyter'>
-      <img class='icons' src='assets/ruby.png' alt='ruby'>
-      <img class='icons' src='assets/VSCode.png' alt='VSC'>
+    <div class="skills">
+      <h1>What technologies & tools do I know?</h1>
+      <div class="imgcontainer">
+        <img class="icons" src="assets/html5.png" alt="html" />
+        <img class="icons" src="assets/css3.png" alt="css3" />
+        <img class="icons" src="assets/javascript.jpeg" alt="javascript" />
+        <img class="icons" src="assets/react.png" alt="react" />
+        <img class="icons" src="assets/mongodb.jpeg" alt="mongo" />
+        <img class="icons" src="assets/mongoose.jpg" alt="mongoose" />
+        <img class="icons" src="assets/expressjs.png" alt="express" />
+        <img class="icons" src="assets/python.png" alt="python" />
+        <img class="icons" src="assets/psql.png" alt="psql" />
+        <img class="icons" src="assets/flask.jpg" alt="flask" />
+        <img class="icons" src="assets/heroku.png" alt="heroku" />
+        <img class="icons" src="assets/jupyter.png" alt="jupyter" />
+        <img class="icons" src="assets/ruby.png" alt="ruby" />
+        <img class="icons" src="assets/VSCode.png" alt="VSC" />
+      </div>
     </div>
-  </div>
-  <div class='projects'>
-    <h2>Here are some projects I worked on and collaborated on</h2>
-    <div class='projectcontainer'>
-      <img class='project' src='assets/Rhy-Finder.png'>
-      <img class='project' src='assets/Otakupedia.png'>
-      <img class='project' src='assets/samplesubmission.png'>
-      <img class='project' src='assets/FunBlog.png'>
-      <img class='project' src='assets/overwatchdata.png'>
+    <div class="projects">
+      <h2>Here are some projects I worked on and collaborated on</h2>
+      <div class="projectcontainer">
+        <img class="project" src="assets/Rhy-Finder.png" />
+        <img class="project" src="assets/Otakupedia.png" />
+        <img class="project" src="assets/samplesubmission.png" />
+        <img class="project" src="assets/FunBlog.png" />
+        <img class="project" src="assets/overwatchdata.png" />
+      </div>
     </div>
-  </div>
-  <div class='blog'>
-    <h2>I sometimes like to blog, about things.</h2>
-    <p>I blog about programming things, and also about my hobbies
-      like traveling and anime conventions!
-    </p>
-    <div class='blog-container'>
-      
+    <div class="blog">
+      <h2>I sometimes like to blog, about things.</h2>
+      <p>
+        I blog about programming things, and also about my hobbies like
+        traveling and anime conventions! Here are some entries, I wrote
+        in the past! If you are interested check me out on:
+        <a href='https://medium.com/@kathleen.bongco'>Medium!</a>
+      </p>
+      <div class="blog-container"></div>
     </div>
-  </div>
-</body>
+    <div class='contact-me'>
+      <h2>Work with me!</h2>
+      <form>
+        <label for='name'>Name:</label><br>
+        <input type='text' id='name' name='name'><br>
+        <label for='email'>Email</label><br>
+        <input type='text' id='email' email='email'><br>
+        <label for='subject'>Subject</label><br>
+        <input type='text' id='subject' subject='subject'><br>
+        <label for='message'>Message</label><br>
+        <textarea id='message' name='message' rows='10' cols='50'>
+        </textarea><br>
+        <button>Send!</button>
+      </form>
+    </div>
+  </body>
+  <footer>
+    &#169; Kathleen B 
+  </footer>
 </html>

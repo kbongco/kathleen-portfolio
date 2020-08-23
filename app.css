@@ -36,12 +36,12 @@
   padding:0 10px;
 }
 
-.about{
+.about, .contact-me{
   padding:60px;
   text-align: center;
   background:#1abc9c;
   color:white;
-  font-size:30px;
+  font-size:16px;
   width:100%;
 }
 
@@ -49,7 +49,7 @@
   font-size:18px;
 }
 
-.skills{
+.skills, .blog{
   padding:60px;
   border:1px solid black;
   background:#f9dcc4;
@@ -78,3 +78,19 @@
   width:100%;
 }
 
+/* .contact-me{
+  text-align:center;
+} */
+footer{
+  background:black;
+  color:white;
+  padding:60px;
+  width:100%;
+}
+.social-icons{
+  display:flex;
+}
+.social-icon{
+  width:50px;
+  height:50px;
+}
