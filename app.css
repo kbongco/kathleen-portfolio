@@ -2,7 +2,7 @@
   font-family: 'Do Hyeon', sans-serif;
 }
 #header{
-  position:fixed;
+  /* position:fixed; */
   display:flex;
   width:100%;
   height:60px;
@@ -78,6 +78,55 @@
   width:100%;
 }
 
+.rhy-image{
+  position:relative;
+  margin-right: 10px;
+}
+
+.project{
+  height:250px;
+  width:250px;
+}
+ .rhy-image:hover{
+  cursor: pointer;
+ }
+ 
+
+
+ 
+
+ .overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.rhy-image:hover .overlay{
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.github-proj{
+  max-width:20px;
+  max-height:20px;
+}
 /* .contact-me{
   text-align:center;
 } */
