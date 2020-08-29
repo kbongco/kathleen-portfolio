@@ -25,6 +25,10 @@
   cover:100%;
 }
 
+#message{
+  text-align:center;
+}
+
 #nav ul li{
   float:left;
   list-style:none;

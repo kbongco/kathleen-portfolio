@@ -162,18 +162,32 @@
       <h2>Work with me! (Form currently Under 
         construction)
       </h2>
-      <form action='mailto:kathleen.bongco@gmail.com'>
-        <label for="name">Name:</label><br />
-        <input type="text" id="name" name="name" /><br />
-        <label for="email">Email</label><br />
-        <input type="text" id="email" email="email" /><br />
-        <label for="subject">Subject</label><br />
-        <input type="text" id="subject" subject="subject" /><br />
-        <label for="message">Message</label><br />
-        <textarea id="message" name="message" rows="10" cols="50"> </textarea
-        ><br />
-        <button>Send!</button>
-      </form>
+      <form
+      action="https://formspree.io/kathleen.bongco@gmail.com"
+      method="POST"
+    >
+      <label>
+        Your name:<br>
+        <input type='text' name='name'>
+      </label><br>
+
+      <label>
+        Your email:<br>
+        <input type="text" name="_replyto"><br>
+      </label>
+      <label>
+        Subject:<br>
+        <input type='text' name='subject'><br>
+      </label>
+      <label>
+        Your message:<br>
+        <textarea name="message" rows="4" cols="50"></textarea>
+      </label><br>
+    
+      <!-- your other form fields go here -->
+    
+      <button type="submit">Send</button><br>
+    </form>
     </div>
   </body>
   <footer>&#169; Kathleen B</footer>
