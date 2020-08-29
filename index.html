@@ -10,13 +10,14 @@
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="index.js" defer></script>
-    <title>Document</title>
+    <title>Kathleen's portfolio</title>
   </head>
   <body>
     <header id="header">
       <div class="container">
         <h1>Kathleen Bongco:Software Engineer</h1>
         <nav id="nav">
+          <a href='assets/icon' id='menu-icon'></a>
           <ul>
             <li>
               <a href="#header">Home</a>
@@ -31,13 +32,20 @@
               <a href="#reach-out">Contact me</a>
             </li>
             <li>
-              <a href="https://drive.google.com/file/d/1lEAEb4Sc0XcgAK6kHxhiIm86s-96n0Km/view?usp=sharing">Resume</a>
+              <a
+                href="https://drive.google.com/file/d/1lEAEb4Sc0XcgAK6kHxhiIm86s-96n0Km/view?usp=sharing"
+                >Resume</a
+              >
             </li>
           </ul>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </nav>
       </div>
+      
     </header>
-    <div class="about" id='about-me'>
+    <div class="about" id="about-me">
       <h1>Who am I?</h1>
       <p id="me">
         My name is Kathleen and I am a Software Engineer. I have a background
@@ -76,17 +84,20 @@
         <img class="icons" src="assets/VSCode.png" alt="VSC" />
       </div>
     </div>
-    <div class="projects" id='fun-projects'>
+    <div class="projects" id="fun-projects">
       <h2>Here are some projects I worked on and collaborated on</h2>
       <div class="projectcontainer">
         <div class="rhy-image">
           <div class="rhy-image">
             <img class="project" src="assets/Rhy-Finder.png" />
-            <div class='overlay'>
-              <div class='text'>Rhy-Finder: A rhythm game/arcade locator made with React JS, HTML,
-              CSS, and Mapbox and Yelp Api
-              <a href='https://github.com/kbongco/Rhy-Finder-'><img class='github-proj' src='assets/github.png'></a>
-              <a href='https://rhy-finder.netlify.app/'>Deployed</a>
+            <div class="overlay">
+              <div class="text">
+                Rhy-Finder: A rhythm game/arcade locator made with React JS,
+                HTML, CSS, and Mapbox and Yelp Api
+                <a href="https://github.com/kbongco/Rhy-Finder-"
+                  ><img class="github-proj" src="assets/github.png"
+                /></a>
+                <a href="https://rhy-finder.netlify.app/">Deployed</a>
               </div>
             </div>
           </div>
@@ -94,11 +105,17 @@
         <div class="rhy-image">
           <div class="rhy-image">
             <img class="project" src="assets/Otakupedia.png" />
-            <div class='overlay'>
-              <div class='text'>Otakupedia: An app made in 
-                vanilla JS, CSS, HTML to retrieve data from the Jikan API to show top/trending anime and a randomizer.<br>
-              <a href='https://github.com/kbongco/Otakupedia'><img class='github-proj' src='assets/github.png'></a>
-              <a href='https://pages.git.generalassemb.ly/kbongco/Otakupedia/'>Deployed</a>
+            <div class="overlay">
+              <div class="text">
+                Otakupedia: An app made in vanilla JS, CSS, HTML to retrieve
+                data from the Jikan API to show top/trending anime and a
+                randomizer.<br />
+                <a href="https://github.com/kbongco/Otakupedia"
+                  ><img class="github-proj" src="assets/github.png"
+                /></a>
+                <a href="https://pages.git.generalassemb.ly/kbongco/Otakupedia/"
+                  >Deployed</a
+                >
               </div>
             </div>
           </div>
@@ -106,10 +123,13 @@
         <div class="rhy-image">
           <div class="rhy-image">
             <img class="project" src="assets/samplesubmission.png" />
-            <div class='overlay'>
-              <div class='text'>Sample Submission: An app 
-                made in Python/Flask to be used as a sample management system in a lab. <br>
-              <a href='https://github.com/kbongco/sampleapp'><img class='github-proj' src='assets/github.png'></a>
+            <div class="overlay">
+              <div class="text">
+                Sample Submission: An app made in Python/Flask to be used as a
+                sample management system in a lab. <br />
+                <a href="https://github.com/kbongco/sampleapp"
+                  ><img class="github-proj" src="assets/github.png"
+                /></a>
               </div>
             </div>
           </div>
@@ -117,10 +137,16 @@
         <div class="rhy-image">
           <div class="rhy-image">
             <img class="project" src="assets/FunBlog.png" />
-            <div class='overlay'>
-              <div class='text'>Fun Blog: A collab full stack application with a React Front End/MongoDB/express back end. <br>
-              <a href='https://github.com/kbongco/full-stack-blog'><img class='github-proj' src='assets/github.png'></a>
-              <a href='https://wizardly-goldwasser-cbed0a.netlify.app/'>Deployed Link </a>
+            <div class="overlay">
+              <div class="text">
+                Fun Blog: A collab full stack application with a React Front
+                End/MongoDB/express back end. <br />
+                <a href="https://github.com/kbongco/full-stack-blog"
+                  ><img class="github-proj" src="assets/github.png"
+                /></a>
+                <a href="https://wizardly-goldwasser-cbed0a.netlify.app/"
+                  >Deployed Link
+                </a>
               </div>
             </div>
           </div>
@@ -128,9 +154,14 @@
         <div class="rhy-image">
           <div class="rhy-image">
             <img class="project" src="assets/overwatchdata.png" />
-            <div class='overlay'>
-              <div class='text'>Overwatch Data Analysis: A project where I manually collected data from Overwatch to analyze my performance. Used Python and pandas, to analyze my performance/  <br>
-              <a href='https://github.com/kbongco/OWdataanalysis'><img class='github-proj' src='assets/github.png'></a>
+            <div class="overlay">
+              <div class="text">
+                Overwatch Data Analysis: A project where I manually collected
+                data from Overwatch to analyze my performance. Used Python and
+                pandas, to analyze my performance/ <br />
+                <a href="https://github.com/kbongco/OWdataanalysis"
+                  ><img class="github-proj" src="assets/github.png"
+                /></a>
               </div>
             </div>
           </div>
@@ -138,10 +169,19 @@
         <div class="rhy-image">
           <div class="rhy-image">
             <img class="project" src="assets/EHR.png" />
-            <div class='overlay'>
-              <div class='text'>EHR: A collab project where there was collaboration with a UX team and other developers to create a website for a non-profit. Front End was created with React, and back end was created with MongoDB,Mongoose,and Express. <br>
-              <a href='https://github.com/kbongco/Eleventh-Hour-Rescue-Redesign'><img class='github-proj' src='assets/github.png'></a>
-              <a href='https://elastic-lovelace-0a232e.netlify.app/'>Deployed </a>
+            <div class="overlay">
+              <div class="text">
+                EHR: A collab project where there was collaboration with a UX
+                team and other developers to create a website for a non-profit.
+                Front End was created with React, and back end was created with
+                MongoDB,Mongoose,and Express. <br />
+                <a
+                  href="https://github.com/kbongco/Eleventh-Hour-Rescue-Redesign"
+                  ><img class="github-proj" src="assets/github.png"
+                /></a>
+                <a href="https://elastic-lovelace-0a232e.netlify.app/"
+                  >Deployed
+                </a>
               </div>
             </div>
           </div>
@@ -158,35 +198,44 @@
       </p>
       <div class="blog-container"></div>
     </div>
-    <div class="contact-me" id='reach-out'>
-      <h2>Work with me! 
-      </h2>
+    <div class="contact-me" id="reach-out">
+      <h2>Work with me!</h2>
       <form
-      action="https://formspree.io/kathleen.bongco@gmail.com"
-      method="POST"
-    >
-      <label>
-        Your name:<br>
-        <input required  class='input' type='text' name='name' size='30'>
-      </label><br>
+        action="https://formspree.io/kathleen.bongco@gmail.com"
+        method="POST"
+      >
+        <label>
+          Your name:<br />
+          <input
+            required
+            class="input"
+            type="text"
+            name="name"
+            size="30"
+          /> </label
+        ><br />
 
-      <label>
-        Your email:<br>
-        <input required class='input' type="text" name="_replyto" size='30'><br>
-      </label>
-      <label>
-        Subject:<br>
-        <input class='input' type='text' name='subject' size='30'><br>
-      </label>
-      <label>
-        Your message:<br>
-        <textarea name="message" rows="10" cols="50"></textarea>
-      </label><br>
-    
-      <!-- your other form fields go here -->
-    
-      <button type="submit">Send</button><br>
-    </form>
+        <label>
+          Your email:<br />
+          <input
+            required
+            class="input"
+            type="text"
+            name="_replyto"
+            size="30"
+          /><br />
+        </label>
+        <label>
+          Subject:<br />
+          <input class="input" type="text" name="subject" size="30" /><br />
+        </label>
+        <label>
+          Your message:<br />
+          <textarea name="message" rows="10" cols="50"></textarea></label
+        ><br />
+
+        <button type="submit">Send</button><br />
+      </form>
     </div>
   </body>
   <footer>&#169; Kathleen B</footer>
