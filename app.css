@@ -1,3 +1,7 @@
+/* *{
+  outline: 1px solid red;
+ } */
+
 html, body {
   margin: 0;
   padding: 0;
@@ -20,8 +24,11 @@ html, body {
   line-height: 60px;
   background:#1d3557;
   color:white;
+  overflow-x:hidden;
 
 }
+
+
 #header h1{
   top:0px;
   margin:0px;
@@ -34,7 +41,6 @@ html, body {
   right:0;
   top:-15px;
   height:60px;
-  cover:100%;
 }
 
 .input{
@@ -56,7 +62,7 @@ html, body {
 }
 
 .about, .contact-me{
-  padding:60px;
+  /* padding:60px; */
   text-align: center;
   background:#1abc9c;
   color:white;
@@ -69,7 +75,7 @@ html, body {
 }
 
 .skills, .blog{
-  padding:60px;
+  /* padding:60px; */
   border:1px solid black;
   background:#f9dcc4;
   width:100%;
@@ -92,7 +98,7 @@ html, body {
 }
 
 .projects{
-  padding:60px;
+  /* padding:60px; */
   background:white;
   width:100%;
 }
@@ -152,7 +158,6 @@ html, body {
 footer{
   background:black;
   color:white;
-  padding:60px;
   width:100%;
 }
 .social-icons{
@@ -161,6 +166,10 @@ footer{
 .social-icon{
   width:50px;
   height:50px;
+}
+
+.contact-me{
+  margin-top:-20px;
 }
 
 @media only screen and (max-width: 768px){
