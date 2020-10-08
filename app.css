@@ -178,7 +178,7 @@ footer{
 
 @media only screen and (max-width: 768px) and (min-width:320px){
   header {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
   }
 
@@ -213,5 +213,9 @@ footer{
     resize: none;
     height: 100px;
     width: 250px;
+  }
+
+  .me{
+    font-size:5vh;
   }
 }
