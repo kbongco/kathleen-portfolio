@@ -4,6 +4,7 @@ const blogPosts = (blogs) => {
   blogs.forEach((blog) => {
     let blogEntrydiv = document.createElement('div')
     let blogTitle = document.createElement('h5')
+    let blogLink = document.createElement('a')
     blogTitle.innerText = blog.title
     blogEntrydiv.appendChild(blogTitle)
     document.querySelector('.blog-container').append(blogEntrydiv)
