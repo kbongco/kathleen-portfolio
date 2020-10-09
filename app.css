@@ -14,7 +14,7 @@ html, body {
   display: hidden;
   width: 40px;
   height: 40px;
-  background: #4C8FEC url(./assets/icon.png) center
+  background: #555B6E url(./assets/icon.png) center
 }
 #header{
   /* position:fixed; */
@@ -22,7 +22,7 @@ html, body {
   width: 100%;
   height: 60px;
   line-height: 60px;
-  background: #1d3557;
+  background: #53565a;
   color: white;
   overflow-x: hidden;
 
@@ -64,7 +64,7 @@ html, body {
 .about, .contact-me{
   /* padding:60px; */
   text-align: center;
-  background:#1abc9c;
+  background: #009ccf;
   color: white;
   font-size: 16px;
   width: 100%;
@@ -176,7 +176,7 @@ footer{
   margin-top: -20px;
 }
 
-@media only screen and (max-width: 768px) and (min-width:320px){
+@media only screen and (max-width: 768px) and (min-width:220px){
   header {
     /* position: absolute; */
     width: 100%;
