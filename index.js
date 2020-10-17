@@ -5,10 +5,10 @@ const blogPosts = (blogs) => {
     let blogEntrydiv = document.createElement('div')
     let blogLink = document.createElement('a')
     console.log(blogLink)
+    blogLink.classList.add('links-here')
     blogLink.href = blog.link
     blogLink.innerText = blog.title
     console.log(blogLink.innerText)
-    blogTitle.innerText = blog.title
     blogEntrydiv.appendChild(blogLink)
     document.querySelector('.blog-container').append(blogEntrydiv)
     
