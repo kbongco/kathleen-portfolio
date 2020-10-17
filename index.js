@@ -3,10 +3,13 @@ mediumURL = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/fee
 const blogPosts = (blogs) => {
   blogs.forEach((blog) => {
     let blogEntrydiv = document.createElement('div')
-    let blogTitle = document.createElement('h5')
     let blogLink = document.createElement('a')
+    console.log(blogLink)
+    blogLink.href = blog.link
+    blogLink.innerText = blog.title
+    console.log(blogLink.innerText)
     blogTitle.innerText = blog.title
-    blogEntrydiv.appendChild(blogTitle)
+    blogEntrydiv.appendChild(blogLink)
     document.querySelector('.blog-container').append(blogEntrydiv)
     
   })
