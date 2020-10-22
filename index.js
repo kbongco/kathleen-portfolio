@@ -1,4 +1,4 @@
-mediumURL = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@kathleen.bongco'
+mediumURL = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@kathleen-bongco'
 
 const blogPosts = (blogs) => {
   blogs.forEach((blog) => {
